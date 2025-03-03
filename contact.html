@@ -3,14 +3,27 @@
     <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Contact | PR</title>
+    <title>Contact</title>
     <link rel="tabIcon" href="#">
     </head>
+    <body>
     <header>
         <a href=about.html> <img src="images/#" class="slogo" alt="Site Logo link to about page"></a>
-        <ul>
+        <ul class="navigation">
             <li><a class="pageNav1" href="#" alt="Link button to about page">About</a></li>
-            <li><a class="pageNav2" href="#" alt="Link button to contact page">Projects</a></li>
-            <li><a class="pageNav3" href="#" alt="Link button to projects page">Contact</a></li>
+            <div class="btn-slc">
+                <li><a class="pageNav2" href="#" alt="Dropdown and link button to projects page">Projects</a></li>
+                <li><a class="pageNav2 dropdown toggle" data-toggle="dropdown">
+                    <span class="ct"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Sites</a></li>
+                    <li><a href="#">Illustrations</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                </ul>
+            </div>
+            <li><a class="pageNav3" href="#" alt="Link button to contact page">Contact</a></li>
+        </ul>
     </header>
+    </body>
 </html>
