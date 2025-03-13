@@ -13,13 +13,14 @@
     <ul>
         <li><a class="pageNav" href="about.html" alt="Link button to about us page">About</a></li>
         <li><div class="dropdown">
-        <a onclick="myFunction()" class="dropdbtn" alt="Dropdown button for projects to view">Projects
+        <a onclick="myFunction()" class="dropdbtn" data-toggle="dropdown" alt="Dropdown button for projects to view">Projects
             <i class="fa fa-caret-down"></i>
         </a>
         <div id="myDropdown" class="dropdown-content">
-            <a class="fma" href="#">Sites</a>
-            <a class="ba" href="#">Graphics/Illustrations</a>
-            <a class="cmd" href="#">UI/UX Design</a>
+            <a href="sites.html">Sites</a>
+            <a href="webapps.html">Webapps</a>
+            <a href="graphics-illustrations.html">Graphics/Illustrations</a>
+            <a href="ui-uxdesign.html">UI/UX Design</a>
         </div></li>
         <li><a class="pageNav" href="contact.html" alt="Link button to contact page">Contact</a></li>
     </ul>
@@ -43,11 +44,15 @@
     <div></div>
     <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
     </footer>
+    <link href="styles\style.css" rel="stylesheet" />
     <link href="styles\contact.css" rel="stylesheet" />
     <link
     href="https://fonts.googleapis.com/css?family=Open+Sans"
     rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Allows you to use fa-fa-caret-down-->
-    <script src="scripts/contact.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script><!--enables caret change to apply upon click, works in conjunction with previous line-->
+    <script src="scripts/ddc-prompt.js"></script>
+    <script src="scripts/caret-change.js"></script>
     </body>
 </html>

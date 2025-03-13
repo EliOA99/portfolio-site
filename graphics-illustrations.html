@@ -3,22 +3,56 @@
     <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>About</title>
+    <title>Graphics-Illustrations</title>
     <link rel="tabIcon" href="#">
     </head>
     <body>
     <header>
-        <a href=about.html> <img src="images/#" class="slogo" alt="Site Logo link to about page"></a>
-        <ul class="navigation">
-            <li><a class="pageNav1" href="#" alt="Link button to about page">About</a></li>
-                <li><a class="pageNav2" href="#" alt="Dropdown and link button to projects page">Projects</a></li>
-                <ul class="dropdown-content">
-                    <li><a href="#">Sites</a></li>
-                    <li><a href="#">Graphics/Illustrations</a></li>
-                    <li><a href="#">UI/UX Design</a></li>
-                </ul>
-            <li><a class="pageNav3" href="#" alt="Link button to contact page">Contact</a></li>
-        </ul>
+    <a href=about.html> <img src="images/#" class="slogo" alt="Site logo"></a>
+    <nav style="margin-top: 2rem; margin-bottom: 1rem;" class="BLinks">
+    <ul>
+        <li><a class="pageNav" href="about.html" alt="Link button to about us page">About</a></li>
+        <li><div class="dropdown">
+        <a onclick="myFunction()" class="dropdbtn" data-toggle="dropdown" alt="Dropdown button for projects to view">Projects
+            <i class="fa fa-caret-down"></i>
+        </a>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="sites.html">Sites</a>
+            <a href="webapps.html">Webapps</a>
+            <a href="graphics-illustrations.html">Graphics/Illustrations</a>
+            <a href="ui-uxdesign.html">UI/UX Design</a>
+        </div></li>
+        <li><a class="pageNav" href="contact.html" alt="Link button to contact page">Contact</a></li>
+    </ul>
+    </nav>
     </header>
+    <main>
+    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
+    <div></div>
+    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
+    <div></div>
+    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
+    <div></div>
+    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
+    </main>
+    <footer>
+    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
+    <div></div>
+    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
+    <div></div>
+    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
+    <div></div>
+    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
+    </footer>
+    <link href="styles\style.css" rel="stylesheet" />
+    <link href="styles\g-i.css" rel="stylesheet" />
+    <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Allows you to use fa-fa-caret-down-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script><!--enables caret change to apply upon click, works in conjunction with previous line-->
+    <script src="scripts/ddc-prompt.js"></script>
+    <script src="scripts/caret-change.js"></script>
     </body>
 </html>
