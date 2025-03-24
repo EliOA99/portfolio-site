@@ -31,21 +31,22 @@ position: relative;
 display: inline-block;
 }
 
-.BLinks a {
+.BLinks a { 
 display: inline-block;
 text-align: center;
 flex: 1;
-color: white;
 padding: 6px 16px;
 font-size: 16px;
 border: none;
-border-radius: 12px;
+border-radius: 8px;
 cursor: pointer;
 }
 
 .BLinks{
 float: right;
 margin-right: 1.5em;
+background-color: black;
+color: white;
 }
 
 a{
@@ -53,20 +54,32 @@ text-decoration: none;
 color: inherit;/*takes the colour which the page is using*/
 }
 
-
-.BLinks a:hover{
-color: #5D2DC4;
+.BLinks a:is(:link, :active :visited).active{/*:not function applied in JS code*/
 text-shadow: 2px 2px 2px #000000;
-border-bottom: 5px solid #5D2DC4;
 background: linear-gradient(0deg,#5D2DC480,transparent);
-transition: 0.5s;
+border-bottom: 2px;
+border-bottom-style: solid;
+border-bottom-color: #5D2DC4;
+
 }
 
+.BLinks a:visited{
+border-bottom: solid #5D2DC4;
+}
+
+.BLinks a:hover:not(.dropdown-content a){
+color: #5D2DC4;
+text-shadow: 2px 2px 2px #000000;
+border-bottom: 4px solid #5D2DC4;
+background: linear-gradient(0deg,#5D2DC480,transparent);
+transition: 0.25s;
+}
 
 .dropdown-content{
 display:none;
 position: absolute;
-background-color: #92ADC9;
+color:white;
+background-color: black;
 border-radius: 8px;
 }
 
@@ -74,14 +87,13 @@ border-radius: 8px;
 padding: 6px 1px;
 display:block;
 font-weight: bold;
-color:#223344;
 font-size: 12px;
+border-radius: 4px;
 }
 
 .dropdown-content a:hover {
-background-color: #223344;
-color:#92ADC9;
-border-radius: 4px;
+background-color: #5D2DC480;
+color: white;
 }
 
 .dropdown:hover .dropdown-content{
