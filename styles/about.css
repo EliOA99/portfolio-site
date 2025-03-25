@@ -3,5 +3,8 @@ color: gray;
 }
 
 main{
-
+background-color: aliceblue;
+align-items:center;
+width: 100%;
+height: 100%;
 }

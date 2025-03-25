@@ -1,17 +1,19 @@
 html {
 font-size: 14px; /* px means "pixels": the base font size is now 10 pixels high */
 font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google Fonts */
+background-color: black;
 }
 
 body {
 margin: auto;
-max-width: 100%;
+max-width: 80%;
 min-height: 100vh;
 display: flex;
 flex-direction: column;
 border-radius: 8px; /*rounds edges*/
 justify-content: center;
 align-items: center;
+background-color: black;
 }
 
 
@@ -44,7 +46,6 @@ cursor: pointer;
 
 .BLinks{
 float: right;
-margin-right: 1.5em;
 background-color: black;
 color: white;
 }
@@ -74,6 +75,8 @@ border-bottom: 4px solid #5D2DC4;
 background: linear-gradient(0deg,#5D2DC480,transparent);
 transition: 0.25s;
 }
+
+
 
 .dropdown-content{
 display:none;
@@ -114,6 +117,17 @@ top: 0;
 position: fixed; /*If I change to sticky, will need to alter width to 100%. Absolute is fine on its own.*/
 padding-bottom: 14px;
 /*border: /*solid 1px white; in case I want to add a border colour around the header*/
+max-width: 80%;
+}
+
+
+.hbr{
+position: absolute;
+top: 0;
+margin-top: 6.8em;
+height: 1px;
+width: 100%;
+background-color:  #5D2DC4;
 }
 
 footer{
@@ -123,7 +137,6 @@ position: fixed; /* footer will remain in view with fixed position as I scroll. 
 }
 
 header, footer{
-border-radius: 8px;
 background-color: black;
 width: 100%;
 }
