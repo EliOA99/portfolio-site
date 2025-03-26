@@ -76,6 +76,13 @@ background: linear-gradient(0deg,#5D2DC480,transparent);
 transition: 0.25s;
 }
 
+.BLinks a:active:not(.dropdown-content a){
+color: #5D2DC4;
+text-shadow: 2px 2px 2px #000000;
+border-bottom: 4px solid #5D2DC4;
+background: linear-gradient(0deg,#5D2DC480,transparent);
+}
+
 
 
 .dropdown-content{
