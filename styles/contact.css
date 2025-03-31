@@ -1,3 +1,35 @@
 body{
-color: gray;
+color: white;
+}
+
+main{
+height: auto;
+max-width: 80%;
+}
+
+.contact{
+margin: 0 auto;
+height: auto;
+background-color: azure;
+padding: 80px 0px;
+display: flex;
+}
+
+.contact h1{
+text-align: center;
+text-transform: capitalize;
+}
+
+.contact-form{
+float: left;
+width: 1800px;
+background-color: blue;
+max-width: 50%;
+}
+
+.faq{
+float: right;
+background-color: blueviolet;
+width: 1800px;
+max-width: 50%;
 }

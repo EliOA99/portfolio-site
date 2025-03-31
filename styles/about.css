@@ -7,6 +7,7 @@ height: auto;
 }
 
 .about{
+margin: 0 auto;
 width: 100%;
 height:auto;
 padding: 78px 0px;
@@ -15,6 +16,7 @@ padding: 78px 0px;
 .about img{
 height: auto;
 width: 420px;
+max-width: 40%;
 border-radius: 4px;
 }
 
