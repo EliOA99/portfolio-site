@@ -1,45 +1,123 @@
-body{
-color: white;
-}
 
 main{
-height: auto;
-max-width: 100%;
-}
-
-.contactct{
-margin: 0 auto;
-height: auto;
-background-color: azure;
-padding: 80px 0px;
+width: 1500px;
 max-width: 80%;
+height: auto;
 }
 
-.contact{
-height: 100%;
-width: 100%;
-min-height: 100vh;
-display: grid;
-grid-template-columns: repeat(2, 2fr);
-align-items: center;
-grid-gap: 6rem;
+.PageCt{
+width: 1500px;
+max-width: 100%;
+display: flex;
 }
 
-.contactct h1{
+.contactctn{
+width: 800px;
+max-width: 50%;
+padding: 0px;
+justify-items: center;
+}
+
+.contactctn h2{
 text-align: center;
+margin-bottom: 10px;
+}
+
+.faqctn{
+width: 800px;
+max-width: 50%;
+padding: 0px 20px;
+}
+
+.faqctn :not(.faqctn h2){
 text-transform: capitalize;
 }
 
-.contact-form{
-float: left;
-width: 1800px;
-background-color: blue;
-max-width: 50%;
+.faqctn h2{
+text-align: center;
+margin-bottom: 10px;
 }
 
-.faq{
+.faqdropdown{
+border-bottom: 1px solid #ddd;
+padding: 10px 0;
+}
+
+.faq-qs{
+background: none;
+border: none;
+width: 100%;
+cursor: pointer;
+padding: 10px;
+display: flex;
+align-items: center;
+text-align: left;
+justify-content: space-between;
+display: inline;
+color: #5D2DC4;
+}
+
+.icon{
+font-size: 1.5rem;
 float: right;
-background-color: blueviolet;
-width: 1800px;
-max-width: 50%;
+}
+
+.faqd-content{
+padding: 10px;
+font-size: 14px;
+text-align:center;
+color: #555;
+display: none;
+}
+
+form input{
+margin-top: 0.5em;
+}
+
+form span,
+form input,
+form textarea{
+border-radius: 8px;
+margin: auto;
+width: 60%;
+margin-bottom: 0.2em;
+}
+
+
+form input:focus,
+form textarea:focus{
+outline:invert;
+box-shadow: 0px 0px 5px #000000;
+}
+
+form textarea{
+margin-top: 1.5em;
+}
+
+form span,
+form input,
+form textarea,
+button{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.contactctn button{
+margin-top: 1em;
+margin-bottom: 1em;
+cursor: pointer;
+padding: 12px 18px;
+background-color: #5D2DC4;
+border-radius: 20px;
+text-transform: capitalize;
+font-weight: bold;
+border: 2px solid transparent;
+}
+
+.contactctn button:hover{
+background-color: transparent;
+border: 2px solid #5D2DC4;
+transition: 0.5s;
+color: white;
 }

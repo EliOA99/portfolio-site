@@ -10,7 +10,7 @@
     <header>
     <section class="navct">
     <a href=about.html> <img src="images/#" class="slogo" alt="Site logo"></a>
-    <nav style="margin-top: 2rem; margin-bottom: 1rem;" class="BLinks">
+    <nav style="margin-top: 2rem;" class="BLinks">
     <a class="pageNav" href="about.html" alt="Link button to about us page">About</a>
     <div class="dropdown">
         <a onclick="myFunction()" class="dropdbtn" data-toggle="dropdown" alt="Dropdown button for projects to view">Projects
@@ -27,30 +27,74 @@
     </section>
     </header>
     <main>
-    <section class="contactct">
-    <section class="contact">
-    <div class="contact-form">
-    <h1>Contact Me</h1>
-    <form action="">
-        <input type="" placeholder="Your Name" required>
-        <input type="email" name="email" id="" placeholder="Email" required>
-        <input type="" placeholder="Reason for Contacting" required>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required>
-        </textarea>
-    <input type="submit" name="" value="Submit" class="btn">
-    </form>
-    </div>
-    </section>
-    <section class="faq">
-    <h1>Frequently Asked Questions</h1>
-    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
-    <div></div>
-    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
-    <div></div>
-    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
-    <div></div>
-    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
-    </section>
+    <section class="PageCt">
+        <section class="contactctn">
+            <h2>Contact Me</h2>
+            <form>
+                <span>Name</span>
+                <input type="text" placeholder="Your Name">
+                <span>Email</span>
+                <input type="text" placeholder="Your Email">
+                <span>Phone Number</span>
+                <input type="text" placeholder="Phone Number">
+                <Span>Reason For Contacting</Span>
+                <input type="text" placeholder="Query">
+                <textarea placeholder="How can I help?"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section class="faqctn">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faqdropdown">
+                <button class="faq-qs">
+                    What kind of websites do you build?
+                    <span class="icon">+</span>
+                </button>
+                <div id="faqans" class="faqd-content">
+                    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
+                </div>
+            </div>
+
+            <div class="faqdropdown">
+                <button class="faq-qs">
+                    Do you design and build sites from scratch?
+                    <span class="icon">+</span>
+                </button>
+                <div id="faqans" class="faqd-content">
+                    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
+                </div>
+            </div>
+            
+            <div class="faqdropdown">
+                <button class="faq-qs">
+                    How long does a project usually take?
+                    <span class="icon">+</span>
+                </button>
+                <div id="faqans" class="faqd-content">
+                    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
+                </div>
+            </div>
+            
+            <div class="faqdropdown">
+                <button class="faq-qs">
+                    Will my site work on other devices?
+                    <span class="icon">+</span>
+                </button>
+                <div id="faqans" class="faqd-content">
+                    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
+                </div>
+            </div>
+
+            <div class="faqdropdown">
+                <button class="faq-qs">
+                    Can you help with texts and images?
+                    <span class="icon">+</span>
+                </button>
+                <div id="faqans" class="faqd-content">
+                    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
+                </div>
+            </div>
+        </section>
     </section>
     </main>
     <footer>
@@ -58,9 +102,6 @@
     <div></div>
     <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
     <div></div>
-    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
-    <div></div>
-    <p>TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE TEXT HERE </p>
     </footer>
     <link href="styles\style.css" rel="stylesheet" />
     <link href="styles\contact.css" rel="stylesheet" />
@@ -70,8 +111,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Allows you to use fa-fa-caret-down-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script><!--enables caret change to apply upon click, works in conjunction with previous line-->
-    <script src="scripts/ddc-prompt.js"></script>
-    <script src="scripts/caret-change.js"></script>
-    <script src="scripts/activePage.js"></script>
+    <script src="scripts/genfunctions.js"></script>
+    <script src="scripts/contact.js"></script>
     </body>
 </html>

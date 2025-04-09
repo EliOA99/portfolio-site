@@ -1,3 +1,8 @@
+*{
+padding: 0;
+margin: 0 auto;
+}
+
 html {
 font-size: 14px; /* px means "pixels": the base font size is now 10 pixels high */
 font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google Fonts */
@@ -6,17 +11,19 @@ color: white;
 }
 
 body {
-margin: auto;
 max-width: 100%;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
 border-radius: 8px; /*rounds edges*/
+background-color: black;
+min-height: 100vh;
 justify-content: center;
 align-items: center;
-background-color: black;
+display: flex;
 }
 
+main{
+width: 80%;
+height: auto;
+}
 
 .slogo{
 width:100px;
@@ -25,7 +32,6 @@ border-radius: 8px;
 display: inline;
 float: left;
 margin-top: 0.5rem;
-padding: 0;
 }
 
 .dropdown{
@@ -51,7 +57,6 @@ color: white;
 }
 
 .navct{
-margin: 0 auto;
 width: 80%;    
 }
 
