@@ -118,7 +118,7 @@ color: white;
 display: block;
 }
 
-.dropdown .dropdbtn:hover i.fa-caret-down::before {/*caret change upon hover*/
+.dropdown .dropdbtn:hover i.fa-chevron-down::before {/*caret change upon hover*/
 transform: rotate(180deg);
 display: inline-block;
 }

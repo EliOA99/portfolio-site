@@ -18,10 +18,10 @@ window.onclick = function(e) {
 //Caret change upon click
 $(document).ready(function(){
   $(".dropdown").on("hide.bs.dropdown", function(){
-    $(".dropdbtn").html('Projects <i class="fa fa-caret-down">');
+    $(".dropdbtn").html('Projects <i class="fa fa-chevron-down">');
   });
   $(".dropdown").on("show.bs.dropdown", function(){
-    $(".dropdbtn").html('Projects <i class="fa fa-caret-up">');
+    $(".dropdbtn").html('Projects <i class="fa fa-chevron-up">');
   });
 });
 

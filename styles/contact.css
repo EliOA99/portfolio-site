@@ -41,12 +41,15 @@ margin-bottom: 10px;
 .faqdropdown{
 border-bottom: 1px solid #ddd;
 padding: 10px 0;
+width: 1000px;
+max-width: 80%;
 }
 
 .faq-qs{
 background: none;
 border: none;
-width: 100%;
+width:1000px;
+max-width: 100%;
 cursor: pointer;
 padding: 10px;
 display: flex;
@@ -54,12 +57,20 @@ align-items: center;
 text-align: left;
 justify-content: space-between;
 display: inline;
+color: inherit;
+}
+
+.active, .faq-qs:hover{/*applies when element is currently clicked and hovered. Can change the hover element to active if necessary*/
 color: #5D2DC4;
 }
 
-.icon{
-font-size: 1.5rem;
+.faq-qs:after{
+content: '\002B';/*inserts content after specified element*/
 float: right;
+}
+
+.active:after{
+content: '\2212';
 }
 
 .faqd-content{
@@ -67,7 +78,10 @@ padding: 10px;
 font-size: 14px;
 text-align:center;
 color: #555;
-display: none;
+overflow: hidden;
+max-height: 0;
+transition: max-height 0.3s ease;
+padding: 0 10px;
 }
 
 form input{
