@@ -84,7 +84,6 @@ padding: 0 10px;
 
 form input, textarea{
 margin-top: 0.5em;
-text-transform: capitalize;
 }
 
 form span,
@@ -134,4 +133,23 @@ background-color: transparent;
 border: 2px solid #5D2DC4;
 transition: 0.5s;
 color: white;
+}
+
+.scm{
+width: 500px;
+max-width: 100%;
+text-align: center;
+margin-top: 2em;
+}
+
+.scm a{
+font-size: 30px;
+margin: 4px;/*can use either padding or margin for space between elements*/
+}
+
+.scm i{
+padding: 4px;
+border-radius: 50%;
+color: black;
+background-color: #7B4DDD;
 }
