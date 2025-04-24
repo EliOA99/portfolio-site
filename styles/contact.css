@@ -1,8 +1,13 @@
+* {
+  box-sizing: border-box;
+}
 
 main{
 width: 1500px;
 max-width: 80%;
 height: auto;
+margin-top: 80px;
+margin-bottom: 10px;
 }
 
 .PageCt{
@@ -49,7 +54,6 @@ width:1000px;
 max-width: 100%;
 cursor: pointer;
 padding: 10px;
-display: flex;
 align-items: center;
 text-align: left;
 justify-content: space-between;
@@ -144,7 +148,7 @@ margin-top: 2em;
 
 .scm a{
 font-size: 30px;
-margin: 4px;/*can use either padding or margin for space between elements*/
+margin: 8px;/*can use either padding or margin for space between elements*/
 }
 
 .scm i{
@@ -152,4 +156,17 @@ padding: 4px;
 border-radius: 50%;
 color: black;
 background-color: #7B4DDD;
+}
+
+@media (max-width: 768px) {
+  .PageCt {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactctn, .faqctn {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
 }

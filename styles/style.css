@@ -54,6 +54,10 @@ cursor: pointer;
 float: right;
 background-color: black;
 color: white;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1rem;
 }
 
 .navct{
@@ -135,6 +139,7 @@ padding-bottom: 14px;
 max-width: 100%;
 border-bottom: 1px solid #5D2DC4;
 }
+
 
 footer{
 bottom: 0;

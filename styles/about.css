@@ -4,6 +4,7 @@ display: flex;
 
 main{
 height: auto;
+margin-top: 5px;
 }
 
 .about{
@@ -15,8 +16,8 @@ padding: 78px 0px;
 
 .about img{
 height: auto;
-width: 420px;
-max-width: 40%;
+max-width: 420px;
+width: 100%;
 border-radius: 4px;
 }
 
@@ -54,7 +55,7 @@ text-align: center;
 
 .scm a{
 font-size: 30px;
-margin: 4px;/*can use either padding or margin for space between elements*/
+margin: 8px;/*can use either padding or margin for space between elements*/
 }
 
 .scm i{
@@ -92,4 +93,14 @@ letter-spacing: 1px;
 line-height: 24px;
 margin-bottom: 2em;
 text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .mainct {
+    flex-direction: column;
+    width: 100%;
+  }
+  .abouttxt {
+    width: 100%;
+  }
 }
