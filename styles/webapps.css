@@ -1,3 +1,69 @@
-body{
-color: gray;
+main{
+width: 1500px;
+max-width: 80%;
+height: auto;
+margin-top: 80px;
+margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from {top: 20%; opacity: 0;}
+  to {top: 100; opacity: 1;}
+  
+}
+
+@-webkit-keyframes fadeIn {
+  from {top: 20%; opacity: 0;}
+  to {top: 100; opacity: 1;}
+  
+}
+
+.PageCt{
+margin: 0 auto;
+width: 100%;
+height:auto;
+padding: 78px 0px;
+text-align: center;
+/*temporary animation*/
+animation: fadeIn 1000ms ease;
+-webkit-animation: fadeIn 1000ms ease;
+}
+
+.PageCt h1{
+font-size: 50px;
+}
+
+.PageCt p{
+margin: 18px;
+}
+
+span{
+color: #7B4DDD;
+}
+
+.scm{
+width: 500px;
+max-width: 100%;
+text-align: center;
+margin-top: 2em;
+}
+
+.scm a{
+font-size: 30px;
+margin: 8px;/*can use either padding or margin for space between elements*/
+}
+
+.scm i{
+padding: 4px;
+border-radius: 50%;
+color: black;
+background-color: #7B4DDD;
+}
+
+@media (max-width: 768px) {
+  .PageCt {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
