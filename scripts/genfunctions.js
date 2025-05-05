@@ -33,3 +33,20 @@ const navLinks = document.querySelectorAll('.BLinks a').forEach(link => {
     console.log(link);
   }
 })
+
+//hamburger toggle
+function toggleMenu() {
+const nav = document.getElementById("navMenu");
+const btn = document.getElementById("hbgbtn")
+const icon = btn.querySelector("i")
+
+nav.classList.toggle("show");
+
+if (icon.classList.contains("fa-bars")) {
+  icon.classList.remove("fa-bars");
+  icon.classList.add("fa-close");
+} else {
+  icon.classList.remove("fa-close");
+  icon.classList.add("fa-bars");
+}
+}

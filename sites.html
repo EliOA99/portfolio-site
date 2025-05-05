@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en-GB">
     <head>
-    <link href="styles\style.css" rel="stylesheet" />
-    <link href="styles\sites.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/sites.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Sites</title>
@@ -12,7 +12,10 @@
     <header>
     <section class="navct">
     <a href=about.html> <img src="images/#" class="slogo" alt="Site logo"></a>
-    <nav style="margin-top: 2rem; margin-bottom: 1rem;" class="BLinks">
+    <button class="hamburger" id="hbgbtn" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+    </button>
+    <nav class="BLinks" id="navMenu">
     <a class="pageNav" href="about.html" alt="Link button to about us page">About</a>
     <div class="dropdown">
         <a onclick="myFunction()" class="dropdbtn" data-toggle="dropdown">Projects
@@ -34,8 +37,8 @@
         <p>Currently working on exciting projects. Stay connected!</p>
     </section>
     <div class="scm">
-        <a href="#" class="LIlink"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#" class="GHlink"><i class="fa-brands fa-github"></i></a>
+    <a href="www.linkedin.com/in/eli-oa" class="LIlink"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/EliOA99" class="GHlink"><i class="fa-brands fa-github"></i></a>
     </div>
     </main>
     <footer>

@@ -2,14 +2,13 @@ main{
 width: 1500px;
 max-width: 80%;
 height: auto;
-margin-top: 80px;
-margin-bottom: 10px;
 }
 
 .PageCt{
 width: 1500px;
 max-width: 100%;
 display: flex;
+margin-bottom: 1.8em;
 }
 
 .contactctn{
@@ -41,6 +40,7 @@ border-bottom: 1px solid #ddd;
 padding: 10px 0;
 width: 1000px;
 max-width: 80%;
+margin: 0 auto;
 }
 
 .faq-qs{
@@ -82,16 +82,16 @@ transition: max-height 0.3s ease;
 padding: 0 10px;
 }
 
-form input, textarea{
-margin-top: 0.5em;
+form{
+width: 80%;
 }
 
 form span,
 form input,
 form textarea{
 border-radius: 4px;
-margin: auto;
-width: 60%;
+margin: 0 auto;
+width: 80%;
 margin-bottom: 0.2em;
 }
 
@@ -113,6 +113,7 @@ button{
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
+text-align: center;
 }
 
 .contactctn button{
@@ -126,6 +127,8 @@ border-radius: 20px;
 text-transform: capitalize;
 font-weight: bold;
 border: 2px solid transparent;
+margin: 0 auto;
+margin-top: 1em;
 }
 
 .contactctn button:hover{
@@ -133,25 +136,6 @@ background-color: transparent;
 border: 2px solid #5D2DC4;
 transition: 0.5s;
 color: white;
-}
-
-.scm{
-width: 500px;
-max-width: 100%;
-text-align: center;
-margin-top: 2em;
-}
-
-.scm a{
-font-size: 30px;
-margin: 8px;/*can use either padding or margin for space between elements*/
-}
-
-.scm i{
-padding: 4px;
-border-radius: 50%;
-color: black;
-background-color: #7B4DDD;
 }
 
 @media (max-width: 768px) {
