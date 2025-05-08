@@ -60,9 +60,9 @@ background-color: #7B4DDD;
 }
 
 @media (max-width: 768px) {
-  .PageCt {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+.PageCt {
+flex-direction: column;
+align-items: center;
+width: 100%;
+}
 }

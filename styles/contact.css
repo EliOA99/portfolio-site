@@ -139,15 +139,17 @@ color: white;
 }
 
 @media (max-width: 768px) {
-  .PageCt {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+.PageCt {
+flex-direction: column;
+align-items: center;
+width: 100%;
+margin-top: 1em;
+}
 
-  .contactctn, .faqctn {
-    width: 100%;
-    max-width: 100%;
-    padding: 1rem;
-  }
+.contactctn, .faqctn {
+width: 100%;
+max-width: 100%;
+height: auto;
+padding: 1rem;
+}
 }
