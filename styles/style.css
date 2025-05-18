@@ -1,5 +1,6 @@
 *{
 padding: 0;
+margin: 0;
 box-sizing: border-box;
 }
 
@@ -29,7 +30,7 @@ height: auto;
 width:100px;
 height: auto;
 border-radius: 8px;
-display: inline;
+display: none;/*to be changed to inline when ready to implement logo*/
 float: left;
 margin-top: 0.5rem;
 }
@@ -180,7 +181,6 @@ text-align: center;
 }
 
 .scm a{
-font-size: 30px;
 margin: 8px;/*can use either padding or margin for space between elements*/
 }
 
@@ -189,6 +189,7 @@ padding: 4px;
 border-radius: 50%;
 color: black;
 background-color: #7B4DDD;
+font-size: 30px;
 }
 
 footer{
@@ -212,6 +213,10 @@ border-radius: 8px;
 flex-direction: column;
 }
 
+.BLinks a{
+font-size: 12px;
+}
+
 .BLinks.show {
 display: flex;
 }
@@ -228,5 +233,9 @@ position: relative;
 
 .dropdown-content {
 position: relative;
+}
+
+.dropdown-content a{
+font-size: 10px;
 }
 }

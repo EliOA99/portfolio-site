@@ -41,6 +41,6 @@ nav.classList.toggle("show");
 }
 
 //hamburger icon change
-function myFunction(x) {
+function myHToggle(x) {
 x.classList.toggle("change");
 }
